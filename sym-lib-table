@@ -1,9 +1,2 @@
 (sym_lib_table
-  (lib (name SmartParallel-rescue)(type Legacy)(uri ${KIPRJMOD}/SmartParallel-rescue.lib)(options "")(descr "")(disabled))
-  (lib (name speculatrix_connectors)(type Legacy)(uri /Users/steve/Dropbox/Dev-Tech/KICAD/speculatrix_libraries/speculatrix_connectors.lib)(options "")(descr "")(disabled))
-  (lib (name speculatrix_display)(type Legacy)(uri /Users/steve/Dropbox/Dev-Tech/KICAD/speculatrix_libraries/speculatrix_display.lib)(options "")(descr "")(disabled))
-  (lib (name speculatrix_ic)(type Legacy)(uri /Users/steve/Dropbox/Dev-Tech/KICAD/speculatrix_libraries/speculatrix_ic.lib)(options "")(descr "")(disabled))
-  (lib (name speculatrix_power)(type Legacy)(uri /Users/steve/Dropbox/Dev-Tech/KICAD/speculatrix_libraries/speculatrix_power.lib)(options "")(descr "")(disabled))
-  (lib (name speculatrix_transistors)(type Legacy)(uri /Users/steve/Dropbox/Dev-Tech/KICAD/speculatrix_libraries/speculatrix_transistors.lib)(options "")(descr "")(disabled))
-  (lib (name speculatrix_microcontroller)(type Legacy)(uri /Users/steve/Dropbox/Dev-Tech/KICAD/speculatrix_libraries/speculatrix_microcontroller.lib)(options "")(descr "")(disabled))
 )

@@ -26,7 +26,7 @@ F 3 "" H 8750 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SmartParallel-rescue:DB25 J1
+L speculatrix_connectors:DB25 J1
 U 1 1 5AB65516
 P 10850 3600
 F 0 "J1" H 10900 4950 50  0000 C CNN
@@ -63,29 +63,18 @@ Text GLabel 2800 3600 0    50   Input ~ 0
 SCK
 Text GLabel 4250 3000 2    50   Input ~ 0
 ~RESET
-$Comp
-L SmartParallel-rescue:CONN_01X06 P1
-U 1 1 5AB667A6
-P 1175 6850
-F 0 "P1" H 1175 7200 50  0000 C CNN
-F 1 "SERIAL_PORT" V 1275 6850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 1175 6850 50  0001 C CNN
-F 3 "" H 1175 6850 50  0000 C CNN
-	1    1175 6850
-	-1   0    0    1   
-$EndComp
 Text GLabel 1375 6900 2    50   Input ~ 0
 RXD
 $Comp
-L SmartParallel-rescue:CONN_01X02 P2
+L Connector:Conn_01x02_Male P2
 U 1 1 5AB668DC
-P 2150 1175
-F 0 "P2" H 2150 1325 50  0000 C CNN
-F 1 "PWR_IN" V 2250 1175 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2150 1175 50  0001 C CNN
-F 3 "" H 2150 1175 50  0000 C CNN
-	1    2150 1175
-	1    0    0    -1  
+P 2150 1225
+F 0 "P2" H 2175 1000 50  0000 C CNN
+F 1 "PWR_IN" V 2075 1175 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2150 1225 50  0001 C CNN
+F 3 "" H 2150 1225 50  0000 C CNN
+	1    2150 1225
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:VCC #PWR01
@@ -384,7 +373,7 @@ NoConn ~ 9250 2650
 Text GLabel 4550 1150 0    50   Input ~ 0
 ~RESET
 $Comp
-L SmartParallel-rescue:Led_Small D3
+L Device:LED_Small D3
 U 1 1 5AB69C3C
 P 4450 4600
 F 0 "D3" H 4400 4725 50  0000 L CNN
@@ -417,7 +406,7 @@ F 3 "" H 4750 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SmartParallel-rescue:Led_Small D2
+L Device:LED_Small D2
 U 1 1 5AB69D3C
 P 4750 4600
 F 0 "D2" H 4700 4725 50  0000 L CNN
@@ -439,7 +428,7 @@ F 3 "" H 1725 7225 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SmartParallel-rescue:74HC541-speculatrix_ic U2
+L speculatrix_ic:74HC541 U2
 U 1 1 5AB76375
 P 6500 5200
 F 0 "U2" H 6500 6050 60  0000 C CNN
@@ -512,7 +501,7 @@ F 3 "" H 5050 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SmartParallel-rescue:Led_Small D1
+L Device:LED_Small D1
 U 1 1 5AB788F6
 P 5050 4600
 F 0 "D1" H 5000 4725 50  0000 L CNN
@@ -538,15 +527,15 @@ F 3 "" H 5700 4250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SmartParallel-rescue:CONN_01X04 P5
+L Connector:Conn_01x04_Male P5
 U 1 1 5AD5CFB3
-P 3675 7050
-F 0 "P5" H 3675 7300 50  0000 C CNN
-F 1 "I2C_DISPLAY" V 3775 7050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3675 7050 50  0001 C CNN
-F 3 "" H 3675 7050 50  0000 C CNN
-	1    3675 7050
-	1    0    0    -1  
+P 3675 7100
+F 0 "P5" H 3775 7350 50  0000 C CNN
+F 1 "I2C_DISPLAY" V 3550 7100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3675 7100 50  0001 C CNN
+F 3 "" H 3675 7100 50  0000 C CNN
+	1    3675 7100
+	-1   0    0    1   
 $EndComp
 Text GLabel 3475 7000 0    50   Input ~ 0
 SDA
@@ -584,8 +573,6 @@ Wire Wire Line
 	1000 1375 1300 1375
 Wire Wire Line
 	1300 1375 1300 1475
-Wire Wire Line
-	1950 925  1950 1125
 Wire Wire Line
 	1300 775  1300 925 
 Wire Wire Line
@@ -914,15 +901,15 @@ Wire Wire Line
 	1700 1325 1700 1375
 Connection ~ 1700 1375
 $Comp
-L SmartParallel-rescue:CONN_01X02 P6
+L Connector:Conn_01x02_Male P6
 U 1 1 5AD8D38D
-P 6300 750
-F 0 "P6" H 6300 900 50  0000 C CNN
-F 1 "REM_RESET" V 6400 750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6300 750 50  0001 C CNN
-F 3 "" H 6300 750 50  0000 C CNN
-	1    6300 750 
-	1    0    0    -1  
+P 6300 800
+F 0 "P6" H 6375 575 50  0000 C CNN
+F 1 "REM_RESET" V 6200 750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6300 800 50  0001 C CNN
+F 3 "" H 6300 800 50  0000 C CNN
+	1    6300 800 
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6100 700  4950 700 
@@ -972,39 +959,33 @@ Wire Wire Line
 	5450 1950 5450 1850
 Connection ~ 5450 1850
 $Comp
-L SmartParallel-rescue:CONN_01X02 P3
+L Connector:Conn_01x02_Male P3
 U 1 1 5AEAF775
-P 2650 1175
-F 0 "P3" H 2650 1325 50  0000 C CNN
-F 1 "PWR_OUT" V 2750 1175 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2650 1175 50  0001 C CNN
-F 3 "" H 2650 1175 50  0000 C CNN
-	1    2650 1175
-	1    0    0    -1  
+P 2650 1225
+F 0 "P3" H 2750 1000 50  0000 C CNN
+F 1 "PWR_OUT" V 2525 1175 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2650 1225 50  0001 C CNN
+F 3 "" H 2650 1225 50  0000 C CNN
+	1    2650 1225
+	-1   0    0    1   
 $EndComp
 $Comp
-L SmartParallel-rescue:CONN_01X02 P4
+L Connector:Conn_01x02_Male P4
 U 1 1 5AEAF7D8
-P 3300 1175
-F 0 "P4" H 3300 1325 50  0000 C CNN
-F 1 "PWR_OUT" V 3400 1175 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 1175 50  0001 C CNN
-F 3 "" H 3300 1175 50  0000 C CNN
-	1    3300 1175
-	1    0    0    -1  
+P 3300 1225
+F 0 "P4" H 3400 1000 50  0000 C CNN
+F 1 "PWR_OUT" V 3225 1175 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 1225 50  0001 C CNN
+F 3 "" H 3300 1225 50  0000 C CNN
+	1    3300 1225
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2450 925  2450 1125
 Connection ~ 1950 925 
-Wire Wire Line
-	3100 925  3100 1125
 Connection ~ 2450 925 
 Wire Wire Line
 	2450 1375 2450 1225
-Connection ~ 1950 1375
 Wire Wire Line
 	3100 1375 3100 1225
-Connection ~ 2450 1375
 Text GLabel 9025 800  1    50   Input ~ 0
 D0
 Text GLabel 9125 800  1    50   Input ~ 0
@@ -1033,7 +1014,7 @@ F 3 "" H 9725 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SmartParallel-rescue:Led_Small D4
+L Device:LED_Small D4
 U 1 1 5B05F13A
 P 8450 5500
 F 0 "D4" H 8400 5625 50  0000 L CNN
@@ -1055,7 +1036,7 @@ F 3 "" H 8450 5850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SmartParallel-rescue:Led_Small D5
+L Device:LED_Small D5
 U 1 1 5B060918
 P 8650 5500
 F 0 "D5" H 8600 5625 50  0000 L CNN
@@ -1066,7 +1047,7 @@ F 3 "" V 8650 5500 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SmartParallel-rescue:Led_Small D6
+L Device:LED_Small D6
 U 1 1 5B0609D2
 P 8850 5500
 F 0 "D6" H 8800 5625 50  0000 L CNN
@@ -1110,7 +1091,7 @@ F 3 "" H 9050 5850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SmartParallel-rescue:Led_Small D7
+L Device:LED_Small D7
 U 1 1 5B06104A
 P 9050 5500
 F 0 "D7" H 9000 5625 50  0000 L CNN
@@ -1325,10 +1306,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 925  3100 925 
 Wire Wire Line
-	1950 1375 2450 1375
-Wire Wire Line
-	2450 1375 3100 1375
-Wire Wire Line
 	5650 4900 6050 4900
 Wire Wire Line
 	9400 6125 9400 6350
@@ -1471,4 +1448,27 @@ Wire Wire Line
 Wire Wire Line
 	2550 4050 2350 4050
 Connection ~ 2350 4050
+$Comp
+L Connector:Conn_01x06_Male P1
+U 1 1 5AB667A6
+P 1175 6800
+F 0 "P1" H 1450 7100 50  0000 C CNN
+F 1 "SERIAL_PORT" V 1075 6750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 1175 6800 50  0001 C CNN
+F 3 "" H 1175 6800 50  0000 C CNN
+	1    1175 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1375 2450 1375
+Wire Wire Line
+	1950 925  1950 1125
+Connection ~ 1950 1375
+Wire Wire Line
+	2450 925  2450 1125
+Wire Wire Line
+	3100 1375 2450 1375
+Wire Wire Line
+	3100 925  3100 1125
+Connection ~ 2450 1375
 $EndSCHEMATC
