@@ -1448,8 +1448,6 @@ Wire Wire Line
 	4525 5950 4525 5775
 Text GLabel 4225 5075 1    50   Input ~ 0
 Stat3
-Text Notes 1075 5375 0    50   ~ 0
-328PB -> Signal buffer\nAck_buf\nErr_buf\nPE_buf\nSel_buf\nBusy_buf
 Wire Wire Line
 	5475 5000 5700 5000
 Wire Wire Line
