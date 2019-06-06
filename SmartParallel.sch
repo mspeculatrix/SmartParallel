@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SmartParallel"
-Date "2019-05-21"
+Date "2019-06-06"
 Rev "1.0"
 Comp "Machina Speculatrix"
 Comment1 "Pullups may be optional. A pulldown on BUSY might be a good idea."
@@ -222,12 +222,12 @@ $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 5AB673B3
-P 1500 5450
-F 0 "#PWR05" H 1500 5200 50  0001 C CNN
-F 1 "GND" H 1500 5300 50  0000 C CNN
-F 2 "" H 1500 5450 50  0000 C CNN
-F 3 "" H 1500 5450 50  0000 C CNN
-	1    1500 5450
+P 1500 4500
+F 0 "#PWR05" H 1500 4250 50  0001 C CNN
+F 1 "GND" H 1500 4350 50  0000 C CNN
+F 2 "" H 1500 4500 50  0000 C CNN
+F 3 "" H 1500 4500 50  0000 C CNN
+	1    1500 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -344,11 +344,11 @@ Text GLabel 4250 3250 2    50   Input ~ 0
 TXD
 Text GLabel 4250 3150 2    50   Input ~ 0
 RXD
-Text GLabel 6050 4800 0    50   Input ~ 0
+Text GLabel 6050 4900 0    50   Input ~ 0
 Busy
 Text GLabel 5050 2600 2    50   Input ~ 0
 LF
-Text GLabel 5550 4700 0    50   Input ~ 0
+Text GLabel 5475 5000 0    50   Input ~ 0
 ~Error
 Text GLabel 5550 4600 0    50   Input ~ 0
 ~ACK
@@ -365,9 +365,9 @@ F 3 "" H 4800 1700 50  0000 C CNN
 $EndComp
 Text GLabel 5050 2700 2    50   Input ~ 0
 ~SelIn
-Text GLabel 5500 4900 0    50   Input ~ 0
+Text GLabel 5500 4800 0    50   Input ~ 0
 SEL
-Text GLabel 6050 5000 0    50   Input ~ 0
+Text GLabel 6050 4700 0    50   Input ~ 0
 PE
 NoConn ~ 9250 2650
 Text GLabel 4550 1150 0    50   Input ~ 0
@@ -375,45 +375,45 @@ Text GLabel 4550 1150 0    50   Input ~ 0
 $Comp
 L Device:LED_Small D3
 U 1 1 5AB69C3C
-P 4450 4600
-F 0 "D3" H 4400 4725 50  0000 L CNN
-F 1 "STAT3" H 4275 4500 50  0000 L CNN
-F 2 "LEDs:LED_1206" V 4450 4600 50  0001 C CNN
-F 3 "" V 4450 4600 50  0000 C CNN
-	1    4450 4600
+P 4225 5175
+F 0 "D3" H 4175 5300 50  0000 L CNN
+F 1 "STAT3" H 4050 5075 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 4225 5175 50  0001 C CNN
+F 3 "" V 4225 5175 50  0000 C CNN
+	1    4225 5175
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 5AB69CAB
-P 4450 4950
-F 0 "R3" V 4530 4950 50  0000 C CNN
-F 1 "330" V 4450 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4380 4950 50  0001 C CNN
-F 3 "" H 4450 4950 50  0000 C CNN
-	1    4450 4950
+P 4225 5525
+F 0 "R3" V 4305 5525 50  0000 C CNN
+F 1 "330" V 4225 5525 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4155 5525 50  0001 C CNN
+F 3 "" H 4225 5525 50  0000 C CNN
+	1    4225 5525
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 5AB69CEA
-P 4750 4950
-F 0 "R6" V 4830 4950 50  0000 C CNN
-F 1 "330" V 4750 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4680 4950 50  0001 C CNN
-F 3 "" H 4750 4950 50  0000 C CNN
-	1    4750 4950
+P 4525 5525
+F 0 "R6" V 4605 5525 50  0000 C CNN
+F 1 "330" V 4525 5525 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4455 5525 50  0001 C CNN
+F 3 "" H 4525 5525 50  0000 C CNN
+	1    4525 5525
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED_Small D2
 U 1 1 5AB69D3C
-P 4750 4600
-F 0 "D2" H 4700 4725 50  0000 L CNN
-F 1 "STAT2" H 4575 4500 50  0000 L CNN
-F 2 "LEDs:LED_1206" V 4750 4600 50  0001 C CNN
-F 3 "" V 4750 4600 50  0000 C CNN
-	1    4750 4600
+P 4525 5175
+F 0 "D2" H 4475 5300 50  0000 L CNN
+F 1 "STAT2" H 4350 5075 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 4525 5175 50  0001 C CNN
+F 3 "" V 4525 5175 50  0000 C CNN
+	1    4525 5175
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -460,16 +460,6 @@ F 3 "" H 5850 5800 50  0000 C CNN
 	1    5850 5800
 	1    0    0    -1  
 $EndComp
-Text Label 4900 3350 2    60   ~ 0
-Ack_buf
-Text Label 4900 3550 2    60   ~ 0
-Busy_buf
-Text Label 4950 3450 2    60   ~ 0
-Error_buf
-Text Label 4850 3650 2    60   ~ 0
-Sel_buf
-Text Label 4850 3750 2    60   ~ 0
-PE_buf
 Text GLabel 10400 4800 0    50   Input ~ 0
 Strobe_buf
 Text GLabel 6900 5100 2    50   Input ~ 0
@@ -492,23 +482,23 @@ $EndComp
 $Comp
 L Device:R R8
 U 1 1 5AB78890
-P 5050 4950
-F 0 "R8" V 5130 4950 50  0000 C CNN
-F 1 "330" V 5050 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4980 4950 50  0001 C CNN
-F 3 "" H 5050 4950 50  0000 C CNN
-	1    5050 4950
+P 4825 5525
+F 0 "R8" V 4905 5525 50  0000 C CNN
+F 1 "330" V 4825 5525 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4755 5525 50  0001 C CNN
+F 3 "" H 4825 5525 50  0000 C CNN
+	1    4825 5525
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED_Small D1
 U 1 1 5AB788F6
-P 5050 4600
-F 0 "D1" H 5000 4725 50  0000 L CNN
-F 1 "STAT1" H 4875 4500 50  0000 L CNN
-F 2 "LEDs:LED_1206" V 5050 4600 50  0001 C CNN
-F 3 "" V 5050 4600 50  0000 C CNN
-	1    5050 4600
+P 4825 5175
+F 0 "D1" H 4775 5300 50  0000 L CNN
+F 1 "STAT1" H 4650 5075 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 4825 5175 50  0001 C CNN
+F 3 "" V 4825 5175 50  0000 C CNN
+	1    4825 5175
 	0    -1   -1   0   
 $EndComp
 Text GLabel 10400 4700 0    50   Input ~ 0
@@ -660,24 +650,13 @@ Wire Wire Line
 Wire Wire Line
 	4550 1150 4750 1150
 Wire Wire Line
-	4250 4300 4450 4300
+	4525 5275 4525 5375
 Wire Wire Line
-	4450 4300 4450 4500
+	4225 5275 4225 5375
 Wire Wire Line
-	4250 4200 4750 4200
+	4225 5675 4225 5775
 Wire Wire Line
-	4750 4200 4750 4500
-Wire Wire Line
-	4750 4700 4750 4800
-Wire Wire Line
-	4450 4700 4450 4800
-Wire Wire Line
-	4450 5100 4450 5200
-Wire Wire Line
-	1500 5200 4450 5200
-Wire Wire Line
-	4750 5200 4750 5100
-Connection ~ 4450 5200
+	4525 5775 4525 5675
 Wire Wire Line
 	5850 3950 5850 4050
 Wire Wire Line
@@ -711,47 +690,13 @@ Wire Wire Line
 	5700 4050 5850 4050
 Connection ~ 5850 4050
 Wire Wire Line
-	6900 4600 7000 4600
-Wire Wire Line
-	7000 4600 7000 3350
-Wire Wire Line
-	7000 3350 4250 3350
-Wire Wire Line
-	6900 4700 7050 4700
-Wire Wire Line
-	7050 4700 7050 3450
-Wire Wire Line
-	7050 3450 4250 3450
-Wire Wire Line
-	6900 4800 7100 4800
-Wire Wire Line
-	7100 4800 7100 3550
-Wire Wire Line
-	7100 3550 4250 3550
-Wire Wire Line
-	6900 4900 7150 4900
-Wire Wire Line
-	7150 4900 7150 3650
-Wire Wire Line
-	7150 3650 4250 3650
-Wire Wire Line
-	6900 5000 7200 5000
-Wire Wire Line
-	7200 5000 7200 3750
-Wire Wire Line
-	7200 3750 4250 3750
-Wire Wire Line
 	4750 1100 4750 1150
 Connection ~ 4750 1150
 Wire Wire Line
-	4250 4100 5050 4100
+	4825 5275 4825 5375
 Wire Wire Line
-	5050 4100 5050 4500
-Wire Wire Line
-	5050 4700 5050 4800
-Wire Wire Line
-	5050 5200 5050 5100
-Connection ~ 4750 5200
+	4825 5775 4825 5675
+Connection ~ 4525 5775
 Wire Wire Line
 	4250 2500 4700 2500
 Wire Wire Line
@@ -913,11 +858,11 @@ F 3 "" H 6300 800 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	6100 700  4950 700 
-Text GLabel 4250 3850 2    50   Input ~ 0
+Text GLabel 4250 3550 2    50   Input ~ 0
 CTS
 Text GLabel 1375 6700 2    50   Input ~ 0
 CTS
-Text GLabel 4250 4000 2    50   Input ~ 0
+Text GLabel 4250 3450 2    50   Input ~ 0
 RTS
 Text GLabel 1375 7100 2    50   Input ~ 0
 RTS
@@ -942,11 +887,6 @@ Wire Wire Line
 	6075 7300 6075 7200
 Wire Wire Line
 	6075 7200 5975 7200
-Wire Wire Line
-	5550 4700 5700 4700
-Wire Wire Line
-	5700 4400 5700 4700
-Connection ~ 5700 4700
 Wire Wire Line
 	4700 1850 4800 1850
 Wire Wire Line
@@ -1121,11 +1061,6 @@ F 3 "" H 5650 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 4900 5650 4900
-Wire Wire Line
-	5650 5050 5650 4900
-Connection ~ 5650 4900
-Wire Wire Line
 	5650 5350 5650 5650
 $Comp
 L speculatrix_ic:74HC14MS U3
@@ -1256,9 +1191,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 2400 5050 2400
 Wire Wire Line
-	1500 5200 1500 5450
-Wire Wire Line
-	4450 5200 4750 5200
+	4225 5775 4525 5775
 Wire Wire Line
 	5850 5400 6050 5400
 Wire Wire Line
@@ -1274,7 +1207,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 1150 4950 1150
 Wire Wire Line
-	4750 5200 5050 5200
+	4525 5775 4825 5775
 Wire Wire Line
 	4700 2500 5050 2500
 Wire Wire Line
@@ -1294,8 +1227,6 @@ Wire Wire Line
 Wire Wire Line
 	1700 1375 1950 1375
 Wire Wire Line
-	5700 4700 6050 4700
-Wire Wire Line
 	4800 1850 4900 1850
 Wire Wire Line
 	4900 1850 5450 1850
@@ -1305,8 +1236,6 @@ Wire Wire Line
 	1950 925  2450 925 
 Wire Wire Line
 	2450 925  3100 925 
-Wire Wire Line
-	5650 4900 6050 4900
 Wire Wire Line
 	9400 6125 9400 6350
 Wire Wire Line
@@ -1331,10 +1260,7 @@ Wire Wire Line
 	2625 2500 2800 2500
 Wire Wire Line
 	1500 4050 1500 4300
-Connection ~ 1500 5200
 Connection ~ 1500 4300
-Wire Wire Line
-	1500 4300 1500 5200
 Wire Wire Line
 	1500 2900 1500 2500
 Connection ~ 1500 2500
@@ -1471,4 +1397,71 @@ Wire Wire Line
 Wire Wire Line
 	3100 925  3100 1125
 Connection ~ 2450 1375
+Text Label 2400 3700 0    50   ~ 0
+XTAL1
+Text Label 2625 3800 0    50   ~ 0
+XTAL2
+Text GLabel 4250 3350 2    50   Input ~ 0
+Ack_buf
+Text GLabel 6900 4600 2    50   Input ~ 0
+Ack_buf
+Text GLabel 4250 4000 2    50   Input ~ 0
+Err_buf
+Text GLabel 6900 5000 2    50   Input ~ 0
+Err_buf
+Text GLabel 4250 4300 2    50   Input ~ 0
+Busy_buf
+Text GLabel 6900 4900 2    50   Input ~ 0
+Busy_buf
+Text GLabel 4250 4200 2    50   Input ~ 0
+Sel_buf
+Text GLabel 6900 4800 2    50   Input ~ 0
+Sel_buf
+Text GLabel 4250 4100 2    50   Input ~ 0
+PE_buf
+Text GLabel 6900 4700 2    50   Input ~ 0
+PE_buf
+Text GLabel 4250 3750 2    50   Input ~ 0
+Stat2
+Text GLabel 4525 5075 1    50   Input ~ 0
+Stat2
+Text GLabel 4250 3650 2    50   Input ~ 0
+Stat1
+Text GLabel 4250 3850 2    50   Input ~ 0
+Stat3
+Text GLabel 4825 5075 1    50   Input ~ 0
+Stat1
+Wire Wire Line
+	1500 4300 1500 4500
+$Comp
+L power:GND #PWR0102
+U 1 1 5CFA0836
+P 4525 5950
+F 0 "#PWR0102" H 4525 5700 50  0001 C CNN
+F 1 "GND" H 4525 5800 50  0000 C CNN
+F 2 "" H 4525 5950 50  0000 C CNN
+F 3 "" H 4525 5950 50  0000 C CNN
+	1    4525 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 5950 4525 5775
+Text GLabel 4225 5075 1    50   Input ~ 0
+Stat3
+Text Notes 1075 5375 0    50   ~ 0
+328PB -> Signal buffer\nAck_buf\nErr_buf\nPE_buf\nSel_buf\nBusy_buf
+Wire Wire Line
+	5475 5000 5700 5000
+Wire Wire Line
+	5700 4400 5700 5000
+Connection ~ 5700 5000
+Wire Wire Line
+	5700 5000 6050 5000
+Wire Wire Line
+	5500 4800 5650 4800
+Wire Wire Line
+	5650 5050 5650 4800
+Connection ~ 5650 4800
+Wire Wire Line
+	5650 4800 6050 4800
 $EndSCHEMATC

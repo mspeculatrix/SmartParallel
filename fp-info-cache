@@ -1,4 +1,4 @@
-4650130257185362
+4653248466072362
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 Neosid, Air-Coil, SML, 1turn, HDM0131A,
@@ -19207,6 +19207,13 @@ CONN DIN 41612 64P
 0
 66
 66
+Speculatrix_connectors
+RJ45_Eth
+RJ45 Ethernet Socket
+RJ45
+0
+8
+8
 Speculatrix_display
 LITEON-4-DIG-7-SEG-LED
 
@@ -19249,6 +19256,13 @@ CONN DIN 41612 64P
 0
 66
 66
+Speculatrix_general
+Mounting_hole_M3
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+0
 Speculatrix_general
 SW_3-pos_PANEL
 
