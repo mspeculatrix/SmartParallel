@@ -1,4 +1,4 @@
-4654813165425362
+4659501874729362
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 Neosid, Air-Coil, SML, 1turn, HDM0131A,
@@ -19257,6 +19257,20 @@ CONN DIN 41612 64P
 66
 66
 Speculatrix_general
+Diode_SOD-123F-S-FLAT
+D_SOD-123F
+D_SOD-123F
+0
+2
+2
+Speculatrix_general
+Inductor_Bourns-SRN5020
+Bourns SRU8043 series SMD inductor
+Bourns SRU8043 SMD inductor
+0
+2
+2
+Speculatrix_general
 Mounting_hole_M3
 module 1 pin (ou trou mecanique de percage)
 DEV
@@ -19277,6 +19291,13 @@ SWITCH DEV
 0
 3
 3
+Speculatrix_general
+SW_SMD_DPDT
+3x-dip-switch, Slide, row spacing 8.61 mm (338 mils), SMD, LowProfile
+DIP Switch Slide 8.61mm 338mil SMD LowProfile
+0
+6
+6
 Speculatrix_general
 TQFP-32_7x7mm_Pitch0.8mm_pad0.4mm
 32-Lead Plastic Thin Quad Flatpack (PT) - 7x7x1.0 mm Body, 2.00 mm [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)

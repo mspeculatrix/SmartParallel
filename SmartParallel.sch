@@ -60,7 +60,7 @@ U 1 1 5AB668DC
 P 1500 1200
 F 0 "P2" H 1525 975 50  0000 C CNN
 F 1 "PWR_IN" V 1425 1150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1500 1200 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02" H 1500 1200 50  0001 C CNN
 F 3 "" H 1500 1200 50  0000 C CNN
 	1    1500 1200
 	-1   0    0    1   
@@ -679,8 +679,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 2900 5650 2900
 Wire Wire Line
-	5650 1850 5650 1950
-Wire Wire Line
 	5450 2250 5450 2800
 Connection ~ 5450 2800
 Wire Wire Line
@@ -813,7 +811,7 @@ F 3 "" H 6300 800 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	6100 700  4950 700 
-Text GLabel 4250 3550 2    50   Input ~ 0
+Text GLabel 4250 4000 2    50   Input ~ 0
 CTS
 Text GLabel 1375 6700 2    50   Input ~ 0
 CTS
@@ -845,10 +843,6 @@ Wire Wire Line
 Connection ~ 4800 1850
 Wire Wire Line
 	4900 1950 4900 1850
-Connection ~ 4900 1850
-Wire Wire Line
-	5450 1950 5450 1850
-Connection ~ 5450 1850
 $Comp
 L Connector:Conn_01x02_Male P3
 U 1 1 5AEAF775
@@ -1026,10 +1020,6 @@ Wire Wire Line
 Wire Wire Line
 	4800 1850 4900 1850
 Wire Wire Line
-	4900 1850 5450 1850
-Wire Wire Line
-	5450 1850 5650 1850
-Wire Wire Line
 	1500 4300 2700 4300
 NoConn ~ 2800 2900
 Wire Wire Line
@@ -1119,7 +1109,7 @@ U 1 1 5AB667A6
 P 1175 6800
 F 0 "P1" H 1450 7100 50  0000 C CNN
 F 1 "SERIAL_PORT" V 1075 6750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 1175 6800 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x06" H 1175 6800 50  0001 C CNN
 F 3 "" H 1175 6800 50  0000 C CNN
 	1    1175 6800
 	1    0    0    -1  
@@ -1186,7 +1176,7 @@ Wire Wire Line
 	5125 5175 5475 5175
 Text GLabel 1375 7100 2    50   Input ~ 0
 RTS
-Text GLabel 4250 4000 2    50   Input ~ 0
+Text GLabel 4250 3550 2    50   Input ~ 0
 RTS
 Wire Wire Line
 	4925 4975 5075 4975
@@ -1297,7 +1287,7 @@ U 1 1 5D12A708
 P 5275 3975
 F 0 "D6" V 5321 3896 50  0000 R CNN
 F 1 "D" V 5230 3896 50  0000 R CNN
-F 2 "" H 5275 3975 50  0001 C CNN
+F 2 "Speculatrix_general:Diode_SOD-123F-S-FLAT" H 5275 3975 50  0001 C CNN
 F 3 "~" H 5275 3975 50  0001 C CNN
 	1    5275 3975
 	0    -1   -1   0   
@@ -1310,13 +1300,13 @@ U 1 1 5D137E6E
 P 4800 1650
 F 0 "D5" V 4846 1571 50  0000 R CNN
 F 1 "D" V 4755 1571 50  0000 R CNN
-F 2 "" H 4800 1650 50  0001 C CNN
+F 2 "Speculatrix_general:Diode_SOD-123F-S-FLAT" H 4800 1650 50  0001 C CNN
 F 3 "~" H 4800 1650 50  0001 C CNN
 	1    4800 1650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4800 1450 4800 1500
+	4800 1450 4800 1475
 Wire Wire Line
 	6325 4675 6975 4675
 Wire Wire Line
@@ -1422,7 +1412,7 @@ U 1 1 5D310104
 P 8150 4900
 F 0 "U3" H 8150 5375 60  0000 C CNN
 F 1 "74LV14" H 8175 4425 60  0000 C CNN
-F 2 "" H 8200 4825 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8200 4825 50  0001 C CNN
 F 3 "" H 8200 4825 50  0000 C CNN
 	1    8150 4900
 	1    0    0    -1  
@@ -1501,7 +1491,7 @@ U 1 1 5D495A9C
 P 5925 5375
 F 0 "U2" H 5925 6250 60  0000 C CNN
 F 1 "74LV541" H 5900 5000 60  0000 C CNN
-F 2 "" H 5975 5375 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 5975 5375 60  0001 C CNN
 F 3 "" H 5975 5375 60  0000 C CNN
 	1    5925 5375
 	1    0    0    -1  
@@ -1512,9 +1502,21 @@ U 1 1 5D4D380C
 P 7850 2225
 F 0 "U4" H 7800 2750 60  0000 C CNN
 F 1 "74LV595" H 7825 1675 60  0000 C CNN
-F 2 "" H 7800 2225 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 7800 2225 60  0001 C CNN
 F 3 "" H 7800 2225 60  0000 C CNN
 	1    7850 2225
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5450 1475 4800 1475
+Wire Wire Line
+	5450 1475 5450 1950
+Connection ~ 4800 1475
+Wire Wire Line
+	4800 1475 4800 1500
+Wire Wire Line
+	5650 1950 5650 1475
+Wire Wire Line
+	5650 1475 5450 1475
+Connection ~ 5450 1475
 $EndSCHEMATC
