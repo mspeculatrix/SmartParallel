@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 19)
+    (drawings 22)
     (tracks 614)
     (zones 0)
     (modules 55)
@@ -655,7 +655,7 @@
     )
   )
 
-  (module Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm (layer F.Cu) (tedit 574D979F) (tstamp 5D29A48D)
+  (module Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm (layer F.Cu) (tedit 574D979F) (tstamp 5DB18005)
     (at 196.85 56.388 270)
     (descr "16-Lead Plastic Small Outline (SL) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
@@ -2353,6 +2353,9 @@
     )
   )
 
+  (gr_circle (center 183.388 55.753) (end 183.642 56.007) (layer F.SilkS) (width 0.12) (tstamp 5DB181AE))
+  (gr_circle (center 181.229 75.692) (end 181.483 75.946) (layer F.SilkS) (width 0.12) (tstamp 5DB180B9))
+  (gr_circle (center 200.533 55.499) (end 200.787 55.753) (layer F.SilkS) (width 0.12))
   (gr_text GND (at 156.464 32.4485 90) (layer F.SilkS) (tstamp 5D2AFB51)
     (effects (font (size 1.5 1.5) (thickness 0.2)) (justify right))
   )
